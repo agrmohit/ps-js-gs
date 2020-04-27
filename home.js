@@ -1,5 +1,10 @@
-let price = 49.99,
-  name = "Hiking Boots",
-  discounted = false;
+let taxPercent = 0;
+let state = "FL";
 
-showMessage(name);
+if (state === "FL") {
+  taxPercent = 7.0;
+} else if (state === "NY") {
+  taxPercent = 8.85;
+}
+
+console.log(taxPercent);
